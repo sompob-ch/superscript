@@ -46,7 +46,7 @@
     "moment": "^2.18.1",
     "mongo-tenant": "^1.0.4",
     "mongoose": "^4.11.5",
-    "natural": "git+https://github.com/golfapipol/natural",
+    "natural": "^0.5.4",
     "pegjs": "^0.10.0",
     "pluralize": "^4.0.0",
     "require-dir": "^0.3.1",
