@@ -296,7 +296,7 @@ const setup = function setup(options = {}, callback) {
      *  instance.getBot('myBot');
      */
     if (options.useMultitenancy) {
-      return callback(null, instance);
+      return callback(null, instance, db);
     }
 
     const bot = instance.getBot('master');
