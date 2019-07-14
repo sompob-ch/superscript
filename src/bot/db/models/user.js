@@ -21,9 +21,7 @@ const createUserModel = function createUserModel(db, factSystem, logger) {
       topic: Object,
       stars: Object,
     }],
-  });
-
-  userSchema.set('versionKey', false);
+  }, { versionKey: false });
 
   userSchema.pre('save', function (next) {
     debug.verbose('Pre-Save Hook');
