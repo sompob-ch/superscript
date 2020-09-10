@@ -229,13 +229,14 @@ class SuperScriptInstance {
     }
   }
 
-  getBot(tenantId) {
+  getBot(tenantId, conversationTimeout=0) {
+    const customConversationTimeout = (conversationTimeout !== 0) ? conversationTimeout : this.conversationTimeout;
     return new SuperScript(this.coreChatSystem,
       this.coreFactSystem,
       this.plugins,
       this.scope,
       this.editMode,
-      this.conversationTimeout,
+      customConversationTimeout,
       this.historyCheckpoints,
       tenantId,
     );
